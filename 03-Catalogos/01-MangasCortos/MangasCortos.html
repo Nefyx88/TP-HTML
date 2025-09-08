@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Define el idioma principal del documento -->
+<head>
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+  <title>Mangas Cortos</title> <!-- Título de la página que aparece en la pestaña -->
+
+
+<!--------------------------------------Por ahora esto se repite en todas las carpetas-------------------------------------------->
+  <style>
+    /* Estilo global del cuerpo de la página */
+      
+    
+    body {
+      margin: 0; /* Elimina el margen por defecto del navegador */
+      font-family: Arial, sans-serif; /* Fuente principal */
+    }
+
+    /* Contenedor principal que organiza el menú y el contenido */
+    .container {
+      display: flex; /* Usa Flexbox para poner los elementos uno al lado del otro */
+    }
+
+    /* Estilo del menú lateral */
+    .sidebar {
+      width: 200px; /* Ancho fijo del menú */
+      background-color: #222; /* Fondo gris oscuro */
+      color: #fff; /* Texto blanco */
+      height: 100vh; /* Altura total de la pantalla */
+      padding: 20px 10px; /* Espaciado interno */
+      box-sizing: border-box; /* Incluye padding en el ancho total */
+    }
+
+    /* Título del menú lateral */
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    /* Estilo de los enlaces del menú lateral */
+    .sidebar a {
+      display: block; /* Hace que el enlace ocupe toda la línea */
+      color: #ccc; /* Color gris claro para los enlaces */
+      text-decoration: none; /* Quita el subrayado */
+      padding: 8px 10px; /* Espaciado interno del enlace */
+      border-radius: 5px; /* Bordes redondeados */
+      margin-bottom: 5px; /* Espaciado entre enlaces */
+    }
+
+    /* Efecto al pasar el mouse por encima de un enlace */
+    .sidebar a:hover {
+      background-color: #444; /* Color de fondo más claro */
+      color: #fff; /* Texto blanco */
+    }
+
+    /* Estilo del área de contenido principal */
+    .content {
+      flex: 1; /* Ocupará el espacio restante */
+      background-color: #fafafa; /* Fondo gris claro */
+      padding: 40px;
+      text-align: center; /* Centra el contenido horizontalmente */
+    }
+
+    /* Estilo de la imagen (presentación) */
+    img {
+      width: 300px;
+      height: auto; /* Mantiene la proporción original */
+      border-radius: 10px; /* Bordes redondeados */
+      cursor: pointer; /* El cursor cambia a "mano" al pasar por la imagen */
+    }
+
+    /* Estilo de la tabla */
+    table {
+      margin: 10px auto; /* Centrada con margen */
+      border-collapse: collapse; /* Bordes colapsados para una apariencia limpia */
+      font-size: 16px;
+    }
+
+    /* Estilo de las celdas de la tabla */
+    th, td {
+      border: 1px solid #999; /* Borde gris claro */
+      padding: 8px 12px; /* Espaciado interno */
+    }
+
+    /* Estilo de las celdas del encabezado */
+    th {
+      background-color: #eee; /* Fondo gris claro */
+    }
+
+    /* Estilo general para los enlaces del contenido (fuera del menú) */
+    a {
+      text-decoration: none; /* Sin subrayado */
+      color: inherit; /* Toma el color del texto del elemento padre */
+    }
+  </style>
+</head>
+<body>
+
+
+
+<!-- CONTENEDOR GENERAL -->
+<div class="container">
+
+  <!-- MENÚ LATERAL -->
+  <div class="sidebar">
+    <h2>Bienvenidos</h2> <!-- Título del menú -->
+
+    <!-- Enlaces del menú -->
+    <a href="C:\borrar\Beltran\Practica Pro\Nuevo Inico\NuevoInicio.html">Inicio</a>
+    <a href="#">Contacto</a>
+
+    <!-- Subsección del menú -->
+    <h3>Catalogos</h3>
+    <a href="/C:\borrar\Beltran\Practica Pro\MangasCortos\MangasCortos.html">Mangas Cortos</a>
+    <a href="C:\borrar\Beltran\Practica Pro\MangasLargos\MangasLargos.html">Mangas Largos</a>
+    <a href="#">Novelas Ligeras</a>
+  </div>
+<!--------------------------------------Por ahora esto se repite en todas las carpetas----------FIN---------------------------------->
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="content">
+    <h1>Mangas Cortos</h1> <!-- Título principal -->
+
+    <!-- Imagen que enlaza al archivo local de Death Note -->
+    <a href="C:\borrar\Beltran\Practica Pro\Death Note\DeathNote.html">
+      <img src="Presentacion.jpg" alt="Abrir Death Note">
+    </a>
+
+    <!-- Tabla con los datos del manga -->
+    <table>
+      <tr>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Año</th>
+        <th>Idioma</th>
+      </tr>
+      <tr>
+        <td>Death Note</td>
+        <td>Tsugumi Ohba y Takeshi Obata</td>
+        <td>2003-2006</td>
+        <td>Español</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>
