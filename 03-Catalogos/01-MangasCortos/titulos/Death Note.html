@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Selector de Tomos</title>
+ 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    select, button {
+      font-size: 16px;
+      padding: 5px 10px;
+      margin: 10px;
+    }
+    t1 {
+      font-size: 24px;
+      display: block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <t1>Death Note</t1>
+
+
+  <!-- Imagen del manga -->
+  <img src="C:\borrar\Beltran\Practica Pro\Death Note\Presentacion.jpg" alt="Death Note" />
+
+  <!-- Descripción del manga -->
+  <div class="descripcion">
+    <p>
+      La trama de «Death Note» sigue a Light Yagami, un estudiante de secundaria extremadamente inteligente que encuentra un cuaderno llamado «Death Note». Este cuaderno tiene el poder de matar a cualquier persona cuyo nombre sea escrito en él, siempre y cuando el portador tenga la cara de la víctima en mente. Light, creyendo que puede usar el Death Note para purgar el mundo del mal y convertirse en un dios, comienza a usarlo para eliminar criminales y crear un mundo utópico bajo su control.
+    </p>
+    <p>
+      Sin embargo, sus acciones atraen la atención de un enigmático detective conocido solo como «L», quien se dedica a detener al misterioso asesino en serie que se hace llamar «Kira». Esto da inicio a un emocionante juego del gato y el ratón entre Light y L, mientras ambos intentan descubrir la verdadera identidad del otro sin ser descubiertos.
+    </p>
+  </div>
+
+
+  <t2><br>Seleccionar Tomo de Lectura</br></t2>
+<!-- Selector de Tomo -->
+  <select id="menu">
+    <option value="Tomo 1.pdf">Tomo 1</option>
+    <option value="Tomo 2.pdf">Tomo 2</option>
+    <option value="Tomo 3.pdf">Tomo 3</option>
+    <option value="Tomo 4.pdf">Tomo 4</option>
+    <option value="Tomo 5.pdf">Tomo 5</option>
+    <option value="Tomo 6.pdf">Tomo 6</option>
+    <option value="Tomo 7.pdf">Tomo 7</option>
+    <option value="Tomo 8.pdf">Tomo 8</option>
+    <option value="Tomo 9.pdf">Tomo 9</option>
+    <option value="Tomo 10.pdf">Tomo 10</option>
+    <option value="Tomo 11.pdf">Tomo 11</option>
+    <option value="Tomo 12.pdf">Tomo 12</option>
+  </select>
+
+  <button onclick="irAlTomo()">Ir</button>
+
+  <script>
+    function irAlTomo() {
+      const seleccion = document.getElementById("menu").value;
+      window.open(seleccion, "_blank");
+    }
+  </script>
+  <a href="C:\borrar\Beltran\Practica Pro\Nuevo Inico\NuevoInicio.html">Inicio</a>
+</body>
+
+
+
+</html>
